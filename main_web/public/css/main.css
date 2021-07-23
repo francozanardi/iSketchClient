@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 440px;
+    padding: 15px;
+    margin: auto;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../fondo_original.png');
+    flex-direction: column;
+}
+
+.hide {
+    display: none !important;
+}
+
+.event-container {
+    padding: 30px 10px;
+    border: 2px double #343a40;
+    border-radius: 10px;
+    background-color: rgb(241, 234, 234);
+    filter: drop-shadow(2px 4px 6px black);
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+}
+
+
+.center-flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

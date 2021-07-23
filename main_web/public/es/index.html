@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary Meta Tags -->
+    <title>iSketchClient | Cómo jugar iSketch</title>
+    <meta name="title" content="iSketchClient | Cómo jugar iSketch">
+    <meta name="description" content="iSketchClient es un sitio web para jugar iSketch en 2021. Funciona en cualquier navegador de la actualidad y no hay necesidad de instalar Shockwave.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://isketchclient.web.app/es/">
+    <meta property="og:title" content="iSketchClient | Cómo jugar iSketch">
+    <meta property="og:description" content="iSketchClient es un sitio web para jugar iSketch en 2021. Funciona en cualquier navegador de la actualidad y no hay necesidad de instalar Shockwave.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://isketchclient.web.app/es/">
+    <meta property="twitter:title" content="iSketchClient | Cómo jugar iSketch">
+    <meta property="twitter:description" content="iSketchClient es un sitio web para jugar iSketch en 2021. Funciona en cualquier navegador de la actualidad y no hay necesidad de instalar Shockwave.">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <div id="container" class="text-center main-container">
+
+      <div class="center-flex mb-2 hide">
+        <div class="center-flex mr-4">
+          <span class="material-icons text-muted" title="Usuarios online con iSketchClient">person</span>
+          <span id="usersOnline" class="text-muted">0</span>
+        </div>
+        <div class="center-flex">
+          <span class="material-icons text-muted" title="Descargas de iSketchClient">file_download</span>
+          <span id="downloads" class="text-muted">0</span>
+        </div>
+      </div>
+
+      <div class="event-container text-center mb-2">
+        <h1>iSketchClient</h1>
+        <hr>
+
+        <div class="event-container-body">
+          <div id="loadingClient" class="loading center-flex">
+            <div class="spinner-border" role="status"></div>
+            <span class="ml-2 font-weight-normal">Cargando...</span>
+          </div>
+    
+          <div id="notFoundClient" class="notFound hide">
+            <h5 class="font-weight-normal error">iSketchClient no fue encontrado</h5>
+            <span>Descarga e instala <a href="https://bit.ly/3iIQH5P">iSketchClient</a> para poder jugar iSketch</span>
+          </div>
+    
+          <div id="playingClient" class="ingame hide">
+            <h5 class="font-weight-normal success">iSketchClient fue ejecutado</h5>
+            <span>¿No puedes verlo? <a href=".">Recarga la página web</a> y acepta abrir iSketchClient</span>
+          </div>
+
+          <div id="onlyWindowsOS" class="onlyWindows hide">
+            <h5 class="font-weight-normal error">Problemas de compatibilidad</h5>
+            <span>iSketchClient solo es compatible con los sistemas operativos de Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="text-muted mr-4" id="moreInfo">Más información</a>
+      <a href="#" class="text-muted ml-4" id="doesNotWork">¿No funciona?</a>
+    </div>
+
+    <footer class="text-center">
+      <span class="text-muted">iSketchClient no fue desarrollado por <a target="_blank" href="https://isketch.net">iSketch</a>.</span>
+    </footer>
+
+    <div class="modal fade" id="infoModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Más información</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <p><b>iSketchClient</b> fue desarrollado con el fin de intentar solucionar los inconvenientes a la hora de jugar <a target="_blank" href="https://isketch.net">iSketch</a>. La idea principal es reducir la complejidad al usuario para poder acceder al juego.</p>
+
+            <p>Para poder instalar <b>iSketchClient</b> requiere tener <a target="_blank" href="https://www.winrar.es/descargas">WinRAR</a> instalado en su equipo, dado que el instalador está comprimido en un archivo <i>RAR</i>. Esta compresión se realiza para evitar bloqueos de <b>Microsoft Defender SmartScreen</b> en el instalador por <a target="_blank" href="https://docs.microsoft.com/en-us/answers/questions/192721/how-do-i-stop-microsoft-defender-smartscreen-block.html">editor desconocido</a> (es decir, el software no fue desarrollado por una empresa que posea certificados).</p>
+            
+            <p>Si usted no tiene instalado <b>WinRAR</b>, puede intentar descargar e instalar directamente el archivo ejecutable desde <a href="https://bit.ly/3i0mCQb">aquí</a>.</p>
+           
+            <p>Si tiene alguna duda, puede contactarme vía mi email personal <a href="mailto:francozanardi97@gmail.com">francozanardi97@gmail.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="notWorksModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">¿No funciona?</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <p>Si ya descargó <b>iSketchClient</b> y la página web lo detecta pero aún así no puede acceder al juego, puede que se deba a alguna de las siguientes causas:</p>
+            
+            <ul>
+              <li>Usted tiene una tarjeta gráfica <b>Nvidia</b>, lo que puede ocasionar ciertos problemas de compatibilidad. Puede ver más sobre eso <a target="_blank" href="https://gaming.stackexchange.com/questions/339173/how-can-i-play-dcr-shockwave-games?newreg=534f64e9e2ad4f698d7c1607667a48df">aquí</a>, en la sección <i>The Shockwave 3D Bad Driver List Bug</i>.</li>
+              
+              <li><b>iSketchClient</b> requiere que su sistema operativo tenga instalado <a target="_blank" href="https://www.microsoft.com/es-ar/download/details.aspx?id=17851">Microsoft .NET Framework 4</a>.</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+
+    <script src="../js/custom-protocol-check.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/stats.js"></script>
+
+    <script>
+      var ln = window.navigator.language||navigator.browserLanguage;
+
+      if(ln.indexOf('es') == -1){
+        window.location.href = '../';
+      } else {
+        init();
+      }
+    </script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="../__/firebase/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="../__/firebase/8.7.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="../__/firebase/init.js"></script>
+  </body>
+</html>
